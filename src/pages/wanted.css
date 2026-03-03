@@ -1,0 +1,315 @@
+.wantedPosterWrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+}
+
+.wantedPoster{
+    display:flex;
+    width:400px;
+    height:440px;
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    color:#483226;
+}
+
+.wantedPosterContentContainer{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    padding:40px;
+    align-items:center;
+    gap:15px;
+    justify-content:center;
+}
+
+.wantedTitleContainer{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content:center;
+    gap:10px;
+}
+
+.wantedTitleHandIcon{
+    width:30px;
+}
+
+.wantedTitle{
+    font-family:"Ultra";
+    margin:0px;
+    font-size:40px;
+    font-weight:200;
+}
+
+.wantedStudentImageContainer{
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    align-items:center;
+}
+
+.wantedStudentImage{
+    width:180px;
+    height:200px;
+    object-fit:cover;
+    object-position:0px -20px;
+    filter:sepia(1);
+    border:solid 3px #483226;
+}
+
+.wantedStudentHousePointsContainer{
+    display:flex;
+    background-color:#a07861;
+    min-width:40px;
+    height:30px;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    top:calc(100% - 56px);
+    padding:16px 20px 10px;
+    border-radius:40px 40px 0px 0px;
+}
+
+.wantedStudentHousePoints{
+    font-size:35px;
+    color:wheat;
+    font-weight:bold;
+}
+
+.wantedStudentNameContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.wantedHousePointsTitle{
+    font-size:14px;
+    line-height:0px;
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.wantedStudentName{
+    font-family:Ultra;
+    margin:0px;
+    font-size:25px;
+    margin-top:10px;
+    font-weight:200;
+    text-align:center;
+}
+
+@keyframes wantedPosterVisibility {
+    from {
+      opacity: 0.0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.wantedPosterWrapperShow{
+    animation:
+    wantedPosterVisibility 0.6s 4s ease-in-out forwards;
+}
+
+.wanted-wrapper{
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  perspective: 2000px;
+  transform-style: preserve-3d;
+}
+
+.wanted-background-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+}
+
+.wanted-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+}
+
+.wanted-heading-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+
+.wanted-heading-container{
+  display: flex;
+  width: calc(100% - 200px);
+  padding: 50px 10px;
+  box-sizing: border-box;
+  z-index: 10;
+  justify-content: center;
+  color: wheat;
+  opacity: 0.0;
+}
+
+.wanted-today-heading{
+  margin: 0px;
+  font-size: 80px;
+  text-align: center;
+  font-weight: 200;
+  position: absolute;
+  top: 40px;
+  font-family: 'courgette';
+  rotate: 346deg;
+}
+
+.wanted-bounty-heading{
+  font-family: 'Ultra';
+  margin: 0px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.wanted-poster-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+.wanted-no-data-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  align-content: center;
+}
+
+.wanted-no-data-heading{
+  font-family: 'Courgette';
+  margin: 0px;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 200;
+  height: fit-content;
+  color: wheat;
+}
+
+.door-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    align-items:end;
+    box-sizing: border-box;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+    z-index: 900;
+  }
+
+  @keyframes open-right-door {
+    0% {
+      transform: rotateY(-0deg) translateX(0px);
+    }
+    50% {
+      transform: rotateY(-90deg) translateX(0px);
+    }
+    100% {
+      transform: rotateY(-90deg) translateX(1000px);
+    }
+  }
+  
+  @keyframes open-left-door {
+    0% {
+        transform: rotateY(0deg) translateX(0px);
+      }
+    50% {
+      transform: rotateY(90deg) translateX(0px);
+    }
+    100% {
+      transform: rotateY(90deg) translateX(-1000px);
+    }
+  }
+  
+
+.left-door {
+    background-color: transparent;
+    width: 100%;
+    height: 55%;
+    /* aspect-ratio: 16 / 25; */
+    transform-origin: 0% 100%;
+    background-image: url(../img/wood-saloon-door-left.png);
+    background-repeat: no-repeat;
+  }
+
+  .left-door-animate{
+    animation: open-left-door 2s ease-in-out forwards;
+  }
+  
+  .right-door {
+    background-color: transparent;
+    width: 100%;
+    height: 55%;
+    /* aspect-ratio: 16 / 25; */
+    transform-origin: 100% 100%;
+    background-image: url(../img/wood-saloon-door-right.png);
+    background-repeat: no-repeat;
+  }
+
+  .right-door-animate{
+    animation: open-right-door 2s ease-in-out forwards;
+  }
+
+
+
+  .wanted-zoom-in{
+    transform: scale3d(1, 1, 1);
+    animation: zoomIn 2.9s 0.98s ease-in-out forwards;
+  }
+
+  @keyframes zoomIn {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    to {
+        transform: scale3d(2.6, 2.6, 1);
+    }
+  }
+
+  .wanted-heading-show{
+    animation: wantedPosterVisibility 0.6s 4s ease-in-out forwards;
+  }

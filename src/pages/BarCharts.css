@@ -1,0 +1,41 @@
+
+/* .animateBar{
+    transition: max-height 1.5s ease-in-out;
+    max-height:100%;
+    
+} */
+
+@keyframes barGrow {
+    from {
+      max-width: 180px;
+    }
+    to {
+      max-width: 100%;
+    }
+}
+
+@keyframes barShrink {
+  from {
+    max-width: 100%;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+  
+#bar-wrapper-open {
+  animation: 
+  barGrow 2s ease-in-out forwards;
+}
+
+#bar-wrapper-closed{
+  max-width: 180px;
+}
+
+/* .barGrow{
+  animation: barGrow 2s ease-in-out forwards 5s;
+}
+
+.barShrink{
+  animation: barShrink 2s ease-in-out forwards 17s;
+} */
