@@ -2,6 +2,33 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Git Stuff to Remember 1st time
+git init -b master
+
+git add .
+
+git commit -m "initial commit"
+
+git remote add origin https://github.com/BoscoCET/Achievements-Web-App
+
+git push origin master2
+
+## Create a new branch
+git branch <new_branch>
+
+## See current branch
+git branch
+
+## Move to an existing branch
+git checkout <existing_branch>
+
+## Move to a new branch
+git checkout -b <new_branch>
+
+## Push to the a branch
+git push origin <branch_name>
+
 ## Available Scripts
 
 In the project directory, you can run:
