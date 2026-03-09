@@ -50,7 +50,13 @@ function Initialise(props:IInitialiseProps){
         }
         let year = Number(queryParameters.get('student_year'));
         let houseinitial = queryParameters.get('house_initial');
-        let interval = Number(queryParameters.get('animation_timeout') ?? 30000);
+        //let interval = Number(queryParameters.get('animation_timeout') ?? 30000);
+        let interval = 1000;
+        const timeout = Number(queryParameters.get('animation_timeout') ?? 0);
+        if (timeout > interval) {
+            interval = timeout - interval;
+        }
+
         let dataType = getHouseDataType(year, houseinitial);
     
         let builtHouses;
@@ -90,7 +96,12 @@ function Initialise(props:IInitialiseProps){
         }
         let year = Number(queryParameters.get('student_year'));
         let house = queryParameters.get('house_initial');
-        let interval = Number(queryParameters.get('animation_timeout') ?? 30000);
+        //let interval = Number(queryParameters.get('animation_timeout') ?? 30000);
+        let interval = 1000;
+        const timeout = Number(queryParameters.get('animation_timeout') ?? 0);
+        if (timeout > interval) {
+            interval = timeout - interval;
+        }
         let dataType = getHouseDataType(year, house);
 
         let builtHouses;
@@ -114,7 +125,12 @@ function Initialise(props:IInitialiseProps){
             if(!orientation.success){
                 throw new Error('Orientation failed.');
             }
-            let interval = Number(queryParameters.get('animation_timeout') ?? 30000);
+            //let interval = Number(queryParameters.get('animation_timeout') ?? 30000);
+            let interval = 4000;
+            const timeout = Number(queryParameters.get('animation_timeout') ?? 0);
+            if (timeout > interval) {
+                interval = timeout - interval;
+            }
             
             let dataTypes = await helpers.getStudentsDataTypes(queryParameters);
             
@@ -136,7 +152,9 @@ function Initialise(props:IInitialiseProps){
             if(!orientation.success){
                 throw new Error('Orientation failed.');
             }
-            let interval = Number(queryParameters.get('animation_timeout') ?? 30000);
+            //let interval = Number(queryParameters.get('animation_timeout') ?? 30000);
+            let interval = 4000;
+            interval = interval + Number(queryParameters.get('animation_timeout') ?? 0);
             
             let dataTypes = await helpers.getStudentsDataTypes(queryParameters);
             
@@ -203,8 +221,20 @@ function Initialise(props:IInitialiseProps){
         }
     },[currentLocation])
 
+    const [time, setTime] = useState(1);
+    useEffect(() => {
+    const interval = setInterval(() => {
+        setTime(prev => prev + 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+    }, []);
+
     if(graphSettingsCompleted){
-        return(<>{children}</>);
+        return(<>
+        <span style={{position:'absolute', color:'white', zIndex:'9', opacity:'20%', fontSize:'2rem', marginTop:'10px', marginLeft:'10px', display:'none'}}>{time}</span>
+        {children}
+        </>);
     }else{
         return(<></>)
     }

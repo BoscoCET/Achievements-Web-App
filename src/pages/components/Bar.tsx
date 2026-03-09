@@ -21,7 +21,6 @@ function Bar(props: IBarProps){
   let darkColor = `rgb(${props.house.darkerHouseColor?.r}, ${props.house.darkerHouseColor?.g}, ${props.house.darkerHouseColor?.b})`;
   let houseColor = `rgb(${props.house.houseColor?.r}, ${props.house.houseColor?.g}, ${props.house.houseColor?.b})`;
 
-  
   useEffect(() => {
     
       setTimeout(() => {

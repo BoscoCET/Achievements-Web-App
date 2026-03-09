@@ -269,70 +269,74 @@ function Home(){
                 {showElement === 'yodeck' && <div style={{display:'flex', flexDirection:'column', width:'100%', padding:'10px 0px 10px 20px', boxSizing:'border-box', borderLeft:'solid 1px gray'}}>
                     <div style={{display:'flex', flexDirection:'column', width:'100%'}}>
                         <h2>Portrait Signage (Chapel)</h2>
-                        <p>Yodeck Playlist (as of 6 March 2026):</p>
+                        <p>Yodeck Playlist (as of 9th March 2026):</p>
                         <div style={{display:'flex', boxSizing:'border-box', padding:'15px', borderRadius:'8px', backgroundColor:'#ff000033', width:'fit-content', alignSelf:'center', margin:'20px 0px', border:'solid 1px #dbb0b0'}}>
                             <p style={{margin:'0px'}}><b>Important:</b> Do not change the <code>animation_timeout</code> in a playlist, as this will update by default on all the screens sharring the same url.</p>
+                        </div>
+
+                        <div style={{display:'flex', boxSizing:'border-box', padding:'15px', borderRadius:'8px', backgroundColor:'#ff000033', width:'fit-content', alignSelf:'center', margin:'20px 0px', border:'solid 1px #dbb0b0'}}>
+                            <p style={{margin:'0px'}}><b>Important:</b> The <code>animation_timeout</code> in a playlist needs to be the lenghts of the previous video in seconds.</p>
                         </div>
                         <ul>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>House Power (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=17000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=17000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=18000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Athens House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=a&animation_timeout=17000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=a&animation_timeout=17000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=a&animation_timeout=18000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=a&animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Roll of Honour (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=13000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=13000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=18000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Corinth House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=c&animation_timeout=17000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=c&animation_timeout=17000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=c&animation_timeout=18000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=c&animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>House Power (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=17000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=17000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=18000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Damascus House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=d&animation_timeout=17000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=d&animation_timeout=17000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=d&animation_timeout=18000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=d&animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Roll of Honour (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=13000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=13000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=18000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Lystra House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=l&animation_timeout=17000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=l&animation_timeout=17000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=l&animation_timeout=18000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=l&animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>House Power (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=17000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=17000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=18000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Rome House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=r&animation_timeout=17000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=r&animation_timeout=17000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=r&animation_timeout=18000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=r&animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Roll of Honour (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=13000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=13000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=18000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=18000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (18"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Valletta House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=v&animation_timeout=17000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=v&animation_timeout=17000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=v&animation_timeout=18000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=v&animation_timeout=18000</code></a> 
                             </li>
                         </ul>
                     </div>
@@ -342,66 +346,69 @@ function Home(){
                         <div style={{display:'flex', boxSizing:'border-box', padding:'15px', borderRadius:'8px', backgroundColor:'#ff000033', width:'fit-content', alignSelf:'center', margin:'20px 0px', border:'solid 1px #dbb0b0'}}>
                             <p style={{margin:'0px'}}><b>Important:</b> Do not change the <code>animation_timeout</code> in a playlist, as this will update by default on all the screens sharring the same url.</p>
                         </div>
+                        <div style={{display:'flex', boxSizing:'border-box', padding:'15px', borderRadius:'8px', backgroundColor:'#ff000033', width:'fit-content', alignSelf:'center', margin:'20px 0px', border:'solid 1px #dbb0b0'}}>
+                            <p style={{margin:'0px'}}><b>Important:</b> The <code>animation_timeout</code> in a playlist needs to be the lenghts of the previous video in seconds.</p>
+                        </div>
                         <ul>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>House Power (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=6000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=6000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=7000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Athens House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=a&animation_timeout=6000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=a&animation_timeout=6000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=a&animation_timeout=7000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=a&animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Roll of Honour (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=3000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=3000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=7000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Corinth House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=c&animation_timeout=6000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=c&animation_timeout=6000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=c&animation_timeout=7000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=c&animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>House Power (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=6000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=6000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=7000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Damascus House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=d&animation_timeout=6000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=d&animation_timeout=6000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=d&animation_timeout=7000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=d&animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Roll of Honour (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=3000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=3000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=7000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Lystra House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=l&animation_timeout=6000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=l&animation_timeout=6000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=l&animation_timeout=7000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=l&animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>House Power (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=6000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=6000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?animation_timeout=7000' target='blank_'><code>{window.location.origin}/horizontal/barchart?animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Rome House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=r&animation_timeout=6000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=r&animation_timeout=6000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=r&animation_timeout=7000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=r&animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Roll of Honour (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=3000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=3000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/vertical/table?past_days=1&r=2&animation_timeout=7000' target='blank_'><code>{window.location.origin}/vertical/table?past_days=1&r=2&animation_timeout=7000</code></a> 
                             </li>
                             <li style={{margin:'5px 0px 5px 0px'}}><b>Map Video (7"):</b></li>
                             <li style={{margin:'5px 0px 5px 0px'}}>
                                 <b>Valletta House Totals (14"): </b>
-                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=v&animation_timeout=6000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=v&animation_timeout=6000</code></a> 
+                                <a style={{textDecoration:'none'}} href='/horizontal/barchart?house_initial=v&animation_timeout=7000' target='blank_'><code>{window.location.origin}/horizontal/barchart?house_initial=v&animation_timeout=7000</code></a> 
                             </li>
                         </ul>
                     </div>
